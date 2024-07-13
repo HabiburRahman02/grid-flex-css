@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {}
+
+        .card-parent {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 30px;
+        }
+
+        .card-parent img {
+            width: 40%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 576px) {
+            .card-container {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .card-parent {
+                flex-direction: column;
+            }
+            .card-parent img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card-parent">
+            <img src="images/baby-4.jpg" alt="">
+            <div>
+                <h5>card title - 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est suscipit quaerat possimus rerum, ipsa
+                    consectetur, nobis exercitationem commodi necessitatibus, eos odit tempora quas maxime voluptatem
+                    porro
+                    non earum sapiente. Odit.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="card-parent">
+            <img src="images/baby-2.jpg" alt="">
+            <div>
+                <h5>card title - 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est suscipit quaerat possimus rerum, ipsa
+                    consectetur, nobis exercitationem commodi necessitatibus, eos odit tempora quas maxime voluptatem
+                    porro
+                    non earum sapiente. Odit.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
