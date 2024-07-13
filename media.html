@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .baby {
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .baby img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* responsive */
+        /* small */
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium */
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* large */
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 1</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet laborum, ducimus qui praesentium
+                temporibus quo enim numquam adipisci molestiae error.</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby-2.jpg" alt="">
+            <p>name - 2</p>
+            <p>Non soluta, voluptatibus dignissimos atque beatae officia, unde ad id cupiditate repellat nesciunt
+                pariatur dolores reprehenderit velit, blanditiis amet quis?</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby-5.jpg" alt="">
+            <p>name - 3</p>
+            <p>Dolorum, est debitis. Obcaecati eum aut maxime dolor quod modi, ea itaque, sunt alias illo saepe ipsam
+                tempora, atque quaerat.</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 4</p>
+            <p>Repudiandae, non quis doloribus, sunt nemo velit porro esse officiis ex ipsam obcaecati, facere
+                accusantium impedit quam necessitatibus pariatur. Vel?</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 5</p>
+            <p>Quis molestiae aperiam sapiente, veniam distinctio fugit, hic aliquam illo eum vero sunt iure ea? Libero,
+                quas natus. Dolore, aliquid?</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 6</p>
+            <p>Modi culpa earum asperiores dolor optio distinctio quaerat quidem porro dolore tenetur praesentium magnam
+                cum, repellat illo voluptatibus, vel ab?</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 7</p>
+            <p>Quidem harum repellat qui magnam labore, praesentium aliquid ratione perferendis perspiciatis delectus
+                sint ab ducimus odio minima adipisci hic facilis!</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 8</p>
+            <p>Repellat quod nostrum nesciunt quam a eaque, ipsum, reprehenderit ipsam ducimus perspiciatis neque
+                asperiores adipisci aspernatur! Voluptate ullam nihil similique!</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 9</p>
+            <p>Ipsa nisi harum tenetur quisquam nesciunt nihil fuga itaque dolores quidem qui. Esse numquam vitae quae
+                eligendi distinctio voluptatum atque.</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 10</p>
+            <p>Nam ratione commodi aut dolorem reiciendis, tempora ad minima aspernatur nihil quasi temporibus neque
+                nostrum officia dolor sapiente. Assumenda, architecto?</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 11</p>
+            <p>Totam architecto saepe odio minus tempora nobis magnam dolores nihil vel, facere nam assumenda sapiente
+                earum, maiores velit aliquam culpa!</p>
+        </div>
+        <div class="baby">
+            <img src="images/baby.jpg" alt="">
+            <p>name - 12</p>
+            <p>Eius eos magni molestiae fugiat ea, nam exercitationem repellat impedit id vel corporis neque iste
+                distinctio temporibus quae voluptatem doloribus?</p>
+        </div>
+    </div>
+</body>
+
+</html>

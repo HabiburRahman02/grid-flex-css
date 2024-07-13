@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .container div {
+            width: 50%;
+        }
+
+        .container img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* responsive */
+        @media screen and (max-width: 776px) {
+            .container{
+                flex-direction: column-reverse;
+            }
+
+            .container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS relative unit(em,rem)</li>
+            <li>body max-width and horizontal align</li>
+            <li>Image fluid</li>
+            <li>two column flex and use media query with flex direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu responsive: will need js</li>
+        </ol>
+        <div class="container">
+            <div><img src="images/baby-2.jpg" alt=""></div>
+            <div><img src="images/baby-3.jpg" alt=""></div>
+        </div>
+    </main>
+</body>
+
+</html>
